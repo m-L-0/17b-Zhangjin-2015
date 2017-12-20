@@ -1,32 +1,6 @@
 [请访问链接](http://note.youdao.com/noteshare?id=f4b5310520413433f6c53b8af8cd033f&sub=6F1F49888A2043AF85652C658E9304E3)
 ## **神经网络过程**
-```
-graph TD
-    A[labels.CSV] -->B[Imgs路径]
-    D[images] -->B
-    A[labels.CSV] -->C[labels]
-    B[Imgs路径] -->E[灰度化]
-    B[Imgs路径] -->F[二值化]
-    B[Imgs路径] -->G[resize 宽50*高40]
-    B[Imgs路径] -->H[归一化]
-    E -->I[图片打乱顺序]
-    C -->I
-    F -->I
-    G -->I
-    H -->I
-    I -->J[切片分割4000一组]
-    J -->K[转为TFrecord文件]
-    K -->L[可视化数据-以长度为组]
-    K -->M[训练模型]
-    N[模型搭建]-->M
-    M -->N
-    N --连接-->P[网站衔接]
-    Q[用户上传图片] -->P
-    P --图片-->N
-    N --结果-->P
-    P -->O[网页展示]
-    
-```
+
 
 - [x] 1. 根据.csv文件读取标签和图片名称
 - [ ] 2. 将图片resize->宽50*高40（Image.open().resize((50,40),Image.ANTIALIAS)）

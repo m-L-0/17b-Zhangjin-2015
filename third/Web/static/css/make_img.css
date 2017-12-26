@@ -1,0 +1,20 @@
+.make{
+    width:730px;
+    height:100%;
+    text-align: center ;
+}
+.form-groups1{
+    width:60px;
+    height:50px;
+}
+.form-groups2{
+    width:730px;
+    height:100%;
+}
+
+.II{
+    float: left;
+}
+.Img{
+    float: right;
+}

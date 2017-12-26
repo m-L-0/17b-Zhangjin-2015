@@ -1,0 +1,12 @@
+
+.navbar.navbar-default{
+    width: 100%;
+}
+
+.main{
+    background: #f3f3f3;
+    width: 730px;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px
+}
